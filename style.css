@@ -1,0 +1,289 @@
+/* --- Custom Properties (Variables) --- */
+:root {
+    --bg-color: #F5F0EB;
+    --card-color: #FFFFFF;
+    --primary-text: #343A40;
+    --secondary-text: #6c757d;
+    --accent-color: #0066CC;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --border-color: #EAEAEA;
+    
+    --font-serif: 'Lora', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+/* --- Global Styles & Resets --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+    line-height: 1.6;
+}
+
+/* --- Main Layout --- */
+.portfolio-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-header h1 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.portfolio-header p {
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+}
+
+/* --- Bento Grid Layout (UPDATED) --- */
+.bento-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "hero hero profile"
+        "projects projects skills"
+        "projects projects certs";
+}
+
+.bento-box {
+    background-color: var(--card-color);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.bento-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Grid Area Assignments (UPDATED) --- */
+.hero { grid-area: hero; }
+.profile-pic { grid-area: profile; }
+.projects { grid-area: projects; }
+.skills { grid-area: skills; }
+.certs { grid-area: certs; } /* NEW */
+
+/* --- Specific Box Styling (UPDATED) --- */
+.hero {
+    justify-content: space-between;
+}
+
+.hero h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: var(--secondary-text);
+    max-width: 90%;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--primary-text);
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn i {
+    font-size: 1.2rem;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: var(--accent-color);
+}
+.resume-btn:hover i {
+    transform: translateX(5px);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--secondary-text);
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+
+.profile-pic {
+    padding: 0;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.projects h3, .certs h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.projects ul, .certs ul {
+    list-style: none;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projects ul li a, .certs ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--primary-text);
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.projects ul li a:hover, .certs ul li a:hover {
+    background-color: #f8f9fa;
+    border-color: var(--border-color);
+}
+
+.projects ul li a i, .certs ul li a i {
+    font-size: 1.5rem;
+    color: var(--secondary-text);
+    transition: transform 0.3s;
+}
+
+.projects ul li a:hover i, .certs ul li a:hover i {
+    transform: translateX(3px) translateY(-3px);
+    color: var(--accent-color);
+}
+
+.project-info span, .certs ul li span {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.projects .tags {
+    margin-top: 8px;
+}
+
+.projects .tags span {
+    display: inline-block;
+    font-size: 0.75rem;
+    background-color: var(--bg-color);
+    color: var(--secondary-text);
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.skills {
+    justify-content: center;
+}
+
+.skills h4 {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.skills p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+/* --- Responsive Design (UPDATED) --- */
+@media (max-width: 992px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "hero hero"
+            "profile projects"
+            "skills projects"
+            "certs projects";
+    }
+}
+
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "hero"
+            "profile"
+            "projects"
+            "skills"
+            "certs";
+    }
+
+    .portfolio-header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .bento-box {
+        padding: 20px;
+    }
+}
