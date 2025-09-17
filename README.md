@@ -13,7 +13,6 @@ This repository contains the source code for my personal portfolio website. It i
 ### Screenshot
 
 ![A screenshot of the portfolio website showing a bento box layout with sections for hero statement, profile picture, projects, skills, and certifications.](./images/screenshot.png) 
-*(**Note:** You will need to take a screenshot of your site and save it as `screenshot.png` in the `images` folder for this to display)*
 
 ---
 
