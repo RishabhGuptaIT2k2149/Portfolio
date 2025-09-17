@@ -6,7 +6,7 @@
 
 This repository contains the source code for my personal portfolio website. It is a clean, modern, single-page application designed to showcase my skills, projects, and professional background in a visually appealing and easy-to-navigate format.
 
-**[➡️ Live Demo Here](https://your-deployed-link.com)** *(Replace with your actual deployed URL)*
+**[➡️ Live Demo Here]( https://rishabhgupta49.netlify.app)*
 
 ---
 
@@ -16,11 +16,11 @@ This repository contains the source code for my personal portfolio website. It i
 
 ---
 
-## ## Design Philosophy
+## Design Philosophy
 
 The design and technology choices for this portfolio were deliberate and focused on achieving specific goals: modern appeal, clarity of information, and excellent performance.
 
-### ### Why a Bento Grid Layout?
+### Why a Bento Grid Layout?
 
 The "bento box" design is a modern UI/UX trend that offers significant advantages for a portfolio:
 
@@ -29,7 +29,7 @@ The "bento box" design is a modern UI/UX trend that offers significant advantage
 * **Modularity and Scalability:** The design is inherently modular. It was simple to add a new "Certifications" block without refactoring the entire layout. This makes the portfolio easy to update as my career grows.
 * **Engaging User Experience:** The grid encourages exploration by presenting content in digestible, "snackable" chunks, making the site feel interactive and less like a static document.
 
-### ### Why a Simple, Static Website Works
+### Why a Simple, Static Website Works
 
 While I have experience building complex applications, a static site (HTML/CSS) was the most effective choice for this portfolio.
 
@@ -41,7 +41,7 @@ While I have experience building complex applications, a static site (HTML/CSS) 
 
 ---
 
-## ## Tech Stack
+##  Tech Stack
 
 This project was built from the ground up using fundamental web technologies, with a focus on clean, semantic code.
 
@@ -54,7 +54,7 @@ This project was built from the ground up using fundamental web technologies, wi
 
 ---
 
-## ## Features
+## Features
 
 * **Fully Responsive Design:** Adapts seamlessly from large desktop screens to mobile devices.
 * **Interactive Bento Grid:** An engaging layout that organizes all key information on a single page.
@@ -64,7 +64,7 @@ This project was built from the ground up using fundamental web technologies, wi
 
 ---
 
-## ## Local Setup & Usage
+## Local Setup & Usage
 
 No complex build tools or dependencies are required.
 
@@ -81,7 +81,7 @@ No complex build tools or dependencies are required.
 
 ---
 
-## ## File Structure
+##  File Structure
 
 The project structure is intentionally simple and organized for clarity.
 
@@ -97,7 +97,7 @@ The project structure is intentionally simple and organized for clarity.
 
 ---
 
-## ## Contact
+##Contact
 
 Let's connect! I'm always open to discussing new projects and opportunities.
 
